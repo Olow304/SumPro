@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="./popup.css">
+	<link rel="stylesheet" type="text/css" href="./tabs.css">
+	<link rel="stylesheet" type="text/css" href="./email.css">
+
+
+	<script src="jquery-2.2.2.min.js"></script>
+
+
+
+	<script src="jspopup.js"></script>
+
+</head>
+
+<body>
+
+
+
+
+	<div class="tabset">
+		<!-- Tab 1 -->
+		<input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+		<label for="tab1">Text Summary</label>
+		<!-- Tab 2 -->
+		<input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+		<label for="tab2">Save</label>
+		<!-- Tab 3 -->
+		<input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+		<label for="tab3">URL Summary</label>
+
+		<div class="tab-panels">
+			<section id="marzen" class="tab-panel">
+				<div id="loading-gif" style="display: none;">
+					<img src="loading.gif" style="height: 100px; widows: 100px;">
+				</div>
+
+
+				<div id="image">
+				</div>
+
+				<div style="width: 30rem;">
+					<br />
+					<h3 id="title" style="width: 70%;"></h3>
+
+					<p id="author"></p>
+					<p id="publishDate"></p>
+					<p id="summary" style="width: 73%;"></p>
+					<button type="submit" id="speak">Listen</button>
+					<button type="submit" id="pause">Pause</button>
+				</div>
+			</section>
+			<section id="rauchbier" class="tab-panel">
+				<div class="container">
+					<div class="container__item">
+						<div id="loading-gif" style="display: none;">
+							<img src="loading.gif" style="height: 100px; widows: 100px;">
+						</div>
+						<form class="form" method="POST" name="emailForm">
+							<input type="email" name="email" class="form__field" placeholder="Email Address" required />
+							<button type="submit" id="submit"
+								class="btn btn--primary btn--inside uppercase">Send</button>
+						</form>
+					</div>
+
+					<div class="container__item container__item--bottom">
+						<p><small><i>Save this summary or send to your friend.</i></small></p>
+					</div>
+					<p id="message"><small></small></p><br>
+				</div>
+			</section>
+			<section id="dunkles" class="tab-panel">
+				<div class="container">
+					<div class="container__item">
+						<div id="loading-gif" style="display: none;">
+							<img src="loading.gif" style="height: 100px; widows: 100px;">
+						</div>
+						<form class="form" method="POST" name="urlForm">
+							<input type="url" name="url" id="url" class="form__field" placeholder="Enter url link"
+								required style="width: 350px;" /><br>
+							<button type="submit" id="urlsubmit"
+								class="btn btn--success btn--inside uppercase">Summary</button>
+						</form>
+					</div>
+
+					<div class="container__item container__item--bottom">
+						<p><small><i>Get summary from url link.</i></small></p>
+					</div>
+					<p id="urlsummary"><small></small></p><br>
+					<p id="urllink"><small><b>Link: </b></small></p><br>
+				</div>
+			</section>
+		</div>
+
+	</div>
+
+	<p><small><u>Extractive summarization</u> - developed by Saleban Olow and Warren Steins</a></cite></small></p><br>
+
+</body>
+
+</html>

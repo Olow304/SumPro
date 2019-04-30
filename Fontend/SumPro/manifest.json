@@ -1,0 +1,31 @@
+{
+	"name": "SumPro",
+	"description": "Get full insight of any articles. The program allows you to summarize any given page.",
+	"version": "1.0",
+	"manifest_version": 2,
+	"background": {
+		"persistent": true,
+		"scripts": ["jspopup.js", "jquery-2.2.2.min.js"]
+	},
+
+	"browser_action": {
+		"default_title": "SumPro",
+		"default_icon": "sum.png",
+		"default_popup": "popup.html"
+	},
+
+	"permissions": [
+		"activeTab",
+		"contextMenus",
+		"tabs",
+		"notifications",
+		"http://*/",
+		"https://*/",
+		"<all_urls>",
+		"http://localhost:8087/summary"
+	],
+	"icons": {
+		"16": "icon.png"
+	}
+
+}
