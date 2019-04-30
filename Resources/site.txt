@@ -1,0 +1,13 @@
+Keras and Tensorflow resources:
+https://www.tensorflow.org/tutorials
+http://intelligentonlinetools.com/blog/2018/01/19/machine-learning-stock-prediction-lstm-keras/
+https://chrisalbon.com/deep_learning/keras/adding_dropout/
+https://machinelearningmastery.com/evaluate-performance-deep-learning-models-keras/
+
+
+
+Server Rest API on flask:
+https://towardsdatascience.com/deploying-a-machine-learning-model-as-a-rest-api-4a03b865c166
+https://realpython.com/flask-connexion-rest-api/
+https://www.codementor.io/dongido/how-to-build-restful-apis-with-python-and-flask-fh5x7zjrx
+https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask

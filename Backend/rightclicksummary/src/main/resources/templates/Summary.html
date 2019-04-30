@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<link>
+    <title>Developed by Saleban & Warren</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    
+    <script type="text/javascript" th:src="@{js/jquery.js}"></script>
+<script type="text/javascript" th:src="@{js/jquery-2.2.2.js}"></script>
+    <script type="text/javascript" th:src="@{js/main.js}"></script>
+    
+    <script type="text/javascript" th:src="@{js/bootstrap.min.js}" ></script>
+    
+</head>
+<body>
+<div class="post">
+    <div class="contact">
+        <div class="title">
+            <h2>Extractive Summarization</h2>
+        </div>
+        
+        <div id="loader" style="display: none; margin: auto;width: 50%;">
+            <img th:src="@{/images/loader.gif}"/>
+        </div>
+        <div class="col-md-12 form-group showhide">
+            <p style="background-color: rgb(228, 248, 215)" id="showsummary"></p>
+        </div>
+        <div class="col-md-12 form-group">
+            <button id="summary" class="btn btn-block btn-lg btn-success" disabled>Summary loading...</button>
+        </div>
+        <div class="row">
+            <div class="clearfix"></div>
+            <div class="col-md-12 form-group">
+                <label class="message">Selected Content</label>
+                <textarea name="" class="form-control" th:text="${data}" cols="47" rows="14" placeholder="Message"></textarea>
+            </div>
+    
+        </div>
+        
+    </div>
+   
+</div>
+
+
+</body>
+</html>

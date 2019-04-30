@@ -1,0 +1,50 @@
+.post {
+    padding: 0 1.5%
+}
+.comment-form .form-control {
+    border: 0px;
+    background: #eee;
+    min-height: 50px;
+}
+.comment-form > .row {
+    margin: 0 -1.5%
+}
+.comment-form [class*="col-"] {
+    padding: 0 1.5%
+}
+
+
+@media (min-width:992px) {
+    .post {
+        width: 50%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .comment-form label {
+        position: absolute;
+        width: 200px;
+    }
+    .comment-form .name {
+        left: -90%;
+        top: 15px;
+        text-align: right;
+    }
+    .comment-form .email {
+        right: -90%;
+        top: 15px;
+    }
+    .comment-form .message {
+        left: -45%;
+        top: 50%;
+        margin-top: -16px;
+        text-align: right;
+    }
+}
+
+
+@media (min-width:1200px) {
+    .post {
+        max-width: 525px;
+    }
+}
+
