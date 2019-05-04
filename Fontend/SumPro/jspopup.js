@@ -34,7 +34,7 @@ function parseURLintoData(innerUrl) {
     return new Promise(function(resolve, reject) {
         $.ajax({
             type: "POST",
-            url: "https://api.aylien.com/api/v1/extract",
+            url: HELPER_API,
             dataType: "json",
             data: {
                 url: innerUrl,
