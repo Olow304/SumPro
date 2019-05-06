@@ -1,6 +1,8 @@
 # SumPro
 Extractive Summarization built for chrome extension
 
+<img width="600" src="blob:https://i.imgur.com/fcubFyq.mp4" >
+
 Made by Saleban and Warren as Capstone project
 
 
